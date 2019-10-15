@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a7a7a7;
+  /* background-image: url("../assets/img/pattern.jpg"); */
+  min-width: 100vw;
+  display: grid;
+  justify-items: center;
+  font-family: "RotondaC", sans-serif;
+  font-weight: bold;
+  color: #114b8c;
+  height: 2200px;
+}
+
+.h1 {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  position: absolute;
+}
+
+.wrapper-1920 {
+  background-image: url("../assets/img/pattern.jpg");
+  max-width: 1920px;
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+  background-position: center center;
+}
+
+.wrapper-1024 {
+  width: 1024px;
+  display: grid;
+  grid-template-rows: 160px 1580px 460px;
+  justify-items: center;
+}
+
+/* HEADER */
+.header {
+  position: relative;
+  max-width: 1023px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 160px;
+}
+
+.header__logo {
+  margin-top: -15px;
+}
+
+.header__competition-rules {
+  padding-right: 80px;
+  padding-top: 25px;
+  display: grid;
+  justify-content: end;
+}
+
+.header__competition-rules a {
+  text-decoration: none;
+}
+
+.header__competition-rules a p {
+  text-decoration: underline;
+  color: #114b8c;
+}
+
+.header__competition-rules a p:hover {
+  color: white;
+}
+
+/* MAIN */
+.main {
+  position: relative;
+  max-width: 1023px;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 460px 380px 720px;
+}
+
+.main__vote__quick-voting {
+  padding-left: 85px;
+}
+
+.main__vote__quick-voting h3 {
+  font-size: 35px;
+  text-transform: uppercase;
+  width: 400px;
+  letter-spacing: 1px;
+}
+
+.main__vote__quick-voting p {
+  font-size: 22px;
+  margin-top: 12px;
+  width: 310px;
+  letter-spacing: 1px;
+}
+
+.main__vote__quick-voting button {
+  font-size: 28px;
+  text-transform: uppercase;
+  border-radius: 40px;
+  margin-top: 65px;
+  width: 253px;
+  height: 70px;
+  background-color: #114b8c;
+  color: white;
+  letter-spacing: 1px;
+  border: 1px #114b8c solid;
+  cursor: pointer;
+}
+
+.main__opportunity {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.main__opportunity__favorite-view {
+  margin-left: 125px;
+}
+
+.main__opportunity__favorite-view p,
+.main__opportunity__about-you p {
+  font-size: 26px;
+  margin-top: 33px;
+  width: 150px;
+  text-align: center;
+  margin-left: 19px;
+}
+
+.main__opportunity__about-you {
+  margin-left: 77px;
+}
+
+.main__opportunity__original-prizes {
+  margin-left: 29px;
+}
+
+.main__opportunity img {
+  cursor: pointer;
+}
+
+.main__opportunity__original-prizes p {
+  font-size: 26px;
+  margin-top: 33px;
+  width: 185px;
+  text-align: center;
+}
+
+.main__form {
+  display: grid;
+  grid-template-columns: 33.3% 66.6%;
+}
+
+.main__form__result {
+  position: relative;
+  margin-left: 40px;
+}
+
+.main__form__ellipse {
+  margin-left: 45px;
+  margin-top: 23px;
+}
+
+.main__form__shirt-woman {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.main__form__shirt-kid {
+  position: absolute;
+  left: 114px;
+  top: 3px;
+}
+
+.main__form__result h6 {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 40px;
+  letter-spacing: 1px;
+}
+
+.main__form__result p {
+  margin-top: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.main__form__participant-data {
+  margin-left: 85px;
+  color: #f15a22;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+
+.main__form__participant-data h4 {
+  text-transform: uppercase;
+  margin-top: 53px;
+  line-height: 1.4;
+}
+
+.main__form__participant-data p {
+  line-height: 1.4;
+}
+
+.main__form__participant-data form {
+  display: grid;
+  grid-template-rows: 480px 1fr;
+}
+
+.main__form__participant-data fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.main__form__participant-data input,
+.main__form__participant-data textarea {
+  margin-top: 30px;
+  height: 60px;
+  width: 86%;
+  border-radius: 30px;
+  font-size: 16px;
+  padding-left: 25px;
+  border: 2px #a7a7a7 solid;
+}
+
+input.main__form__participant-data__input-city {
+  margin-top: 40px;
+}
+
+textarea.main__form__participant-data__input-about-yourself {
+  margin-top: 40px;
+  height: 120px;
+  padding-top: 23px;
+}
+
+.main__form__participant-data input:hover,
+.main__form__participant-data textarea:hover {
+  border: 2px #ff0066 solid;
+}
+
+input[type="text"]:hover,
+textarea[type="text"]:hover {
+  color: #ff0066;
+}
+
+input[type="text"]:hover::-webkit-input-placeholder,
+textarea[type="text"]:hover::-webkit-input-placeholder {
+  color: #ff0066;
+}
+
+*:focus {
+  outline: none;
+}
+
+.main__form__participant-data button {
+  display: grid;
+  margin-right: 14%;
+  justify-self: end;
+  height: 70px;
+  width: 50%;
+  border-radius: 30px;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 1px;
+  background-color: #f15a22;
+  color: white;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  position: relative;
+  max-width: 1023px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 74% 26%;
+  align-items: flex-end;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer__our-contacts ul {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;
+  margin: auto 80px 70px;
+  font-size: 22px;
+}
+
+.footer__our-contacts__mail {
+  padding-left: 26px;
+}
+
+.footer__our-contacts__phone {
+  padding-left: 31px;
+}
+
+.footer__our-social ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 58px;
+  margin-right: 18px;
+}
+
+.footer__our-social__odnoklassniki {
+}

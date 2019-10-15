@@ -3,81 +3,144 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
     <title>test-markup-JS-H-W-H-P</title>
   </head>
   <body>
-    <wrapper class="wrapper">
-      <header class="header">
-        <h1 class="header__h1"></h1>
-        <div class="header__logo"></div>
-        <div class="header__competition-rules"></div>
-      </header>
-      <main class="main">
-        <section class="main__vote">
-          <figure class="main__vote__quick-voting">
-            <h3></h3>
-            <p></p>
-            <button></button>
+    <h1 class="h1">test-markup-JS-H-W-H-P</h1>
+    <div class="wrapper-1920">
+      <div class="wrapper-1024">
+        <header class="header">
+          <figure class="header__logo">
+            <a href="#">
+              <img src="assets/img/Logo.jpg" alt="Logo" />
+            </a>
           </figure>
-          <figure class="main__vote__bag"></figure>
-        </section>
-        <section class="opportunity">
-          <figure class="main__opportunity__favorite-view">
-            <img src="" alt="" />
-            <p></p>
+          <figure class="header__competition-rules">
+            <a href="#"> <p>Правила конкурса</p> </a>
           </figure>
-          <figure class="main__opportunity__about-you">
-            <img src="" alt="" />
-            <p></p>
+        </header>
+        <main class="main">
+          <section class="main__vote">
+            <figure class="main__vote__quick-voting">
+              <h3 id="upper">Lorem ipsum dolor sit amet, consectetur</h3>
+              <p>Что попадет в коллекцию – решать вам!</p>
+              <button>голосовать</button>
+            </figure>
+          </section>
+          <section class="main__opportunity">
+            <figure class="main__opportunity__favorite-view">
+              <img src="assets/img/shirt.jpg" alt="shirt" />
+              <p>Голосуйте за любимый образ</p>
+            </figure>
+            <figure class="main__opportunity__about-you">
+              <img src="assets/img/bird.png" alt="bird" />
+              <p>Расскажите о себе</p>
+            </figure>
+            <figure class="main__opportunity__original-prizes">
+              <img src="assets/img/presents.png" alt="presents" />
+              <p>Выигрывайте оригинальные призы!</p>
+            </figure>
+          </section>
+          <section class="main__form">
+            <figure class="main__form__result">
+              <img
+                class="main__form__ellipse"
+                src="assets/img/Ellipse.png"
+                alt="ellipse"
+              />
+              <img
+                class="main__form__shirt-woman"
+                src="assets/img/shirt-woman.png"
+                alt="shirt-big"
+              />
+              <img
+                class="main__form__shirt-kid"
+                src="assets/img/shirt-kid.png"
+                alt="shirt-small"
+              />
+              <h6>Спасибо за ваш голос!</h6>
+              <p>
+                Образ «Lorem Ipsum»<br />
+                отметили еще 50% участников.
+              </p>
+            </figure>
+            <figure class="main__form__participant-data">
+              <h4>
+                Хотите принять участие <br />
+                в конкурсе и выиграть призы?
+              </h4>
+              <p>Заполните еще несколько полей.</p>
+              <form action="">
+                <fieldset>
+                  <input
+                    class="main__form__participant-data__input-name"
+                    type="text"
+                    autofocus
+                    placeholder="Вас зовут"
+                    required
+                  />
+                  <input
+                    class="main__form__participant-data__input-phone"
+                    type="text"
+                    placeholder="Ваш номер телефона"
+                    required
+                  />
+                  <input
+                    class="main__form__participant-data__input-city"
+                    type="text"
+                    placeholder="Город"
+                  />
+                  <textarea
+                    class="main__form__participant-data__input-about-yourself"
+                    type="text"
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Расскажите о себе"
+                  ></textarea>
+                </fieldset>
+                <button>отправить</button>
+              </form>
+            </figure>
+          </section>
+        </main>
+        <footer class="footer">
+          <figure class="footer__our-contacts">
+            <ul>
+              <li class="footer__our-contacts__produce">
+                <p>(c) 2019, Lorem Ipsum</p>
+              </li>
+              <li class="footer__our-contacts__mail">
+                <p>info@site.by</p>
+              </li>
+              <li class="footer__our-contacts__phone">
+                <p>+375 29 000-00-00</p>
+              </li>
+            </ul>
           </figure>
-          <figure class="main__opportunity__original-prizes">
-            <img src="" alt="" />
-            <p></p>
+          <figure class="footer__our-social">
+            <ul>
+              <li class="footer__our-social__vk">
+                <a href="#"><img src="assets/img/vk.png" alt="vk"/></a>
+              </li>
+              <li class="footer__our-social__instagram">
+                <a href="#"><img src="assets/img/insta.png" alt="insta"/></a>
+              </li>
+              <li class="footer__our-social__odnoklassniki">
+                <a href="#"><img src="assets/img/ok.png" alt="ok"/></a>
+              </li>
+            </ul>
           </figure>
-        </section>
-        <section class="form">
-          <figure class="main__form__result">
-            <img src="" alt="" />
-            <h6></h6>
-            <p></p>
-          </figure>
-          <figure class="main__form__participant-data">
-            <h4></h4>
-            <p></p>
-            <form action="">
-              <fieldset>
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
-              </fieldset>
-              <button></button>
-            </form>
-          </figure>
-        </section>
-      </main>
-      <footer class="footer">
-        <figure class="footer__our-contacts">
-          <ul>
-            <li class="footer__our-contacts__produce">
-              <p></p>
-            </li>
-            <li class="footer__our-contacts__mail">
-              <p></p>
-            </li>
-            <li class="footer__our-contacts__phone">
-              <p></p>
-            </li>
-          </ul>
-        </figure>
-        <figure class="footer__our-social">
-          <ul>
-            <li class="footer__our-social__vk"><a href=""></a></li>
-            <li class="footer__our-social__instagram"><a href=""></a></li>
-            <li class="footer__our-social__odnoklassniki"><a href=""></a></li>
-          </ul>
-        </figure>
-      </footer>
-    </wrapper>
+        </footer>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
