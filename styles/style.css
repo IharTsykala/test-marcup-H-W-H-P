@@ -23,6 +23,12 @@ body {
   position: absolute;
 }
 
+.berry-body {
+  position: fixed;
+  top: 355px;
+  left: 180px;
+}
+
 .wrapper-1920 {
   background-image: url("../assets/img/pattern.jpg");
   max-width: 1920px;
@@ -33,10 +39,48 @@ body {
 }
 
 .wrapper-1024 {
+  position: relative;
   width: 1024px;
   display: grid;
   grid-template-rows: 160px 1580px 460px;
   justify-items: center;
+}
+
+.wrapper-1024__bag-set {
+  position: absolute;
+  top: 90px;
+  right: 60px;
+  width: 535px;
+  height: 500px;
+}
+
+.wrapper-1024__bag-set__apple {
+  position: absolute;
+  top: 205px;
+}
+
+.wrapper-1024__bag-set__bottle {
+  position: absolute;
+  top: 0;
+  left: 264px;
+}
+
+.wrapper-1024__bag-set__berry {
+  position: absolute;
+  top: 58px;
+  left: 471px;
+}
+
+.wrapper-1024__bag-set__bag {
+  position: absolute;
+  top: 0px;
+  left: 77px;
+}
+
+.wrapper-1024__bag-set__strawberry {
+  position: absolute;
+  top: 411px;
+  left: 416px;
 }
 
 /* HEADER */
@@ -75,11 +119,14 @@ body {
 
 /* MAIN */
 .main {
-  position: relative;
   max-width: 1023px;
   width: 100vw;
   display: grid;
   grid-template-rows: 460px 380px 720px;
+}
+
+.main__vote {
+  position: relative;
 }
 
 .main__vote__quick-voting {
@@ -112,6 +159,12 @@ body {
   letter-spacing: 1px;
   border: 1px #114b8c solid;
   cursor: pointer;
+}
+
+img.main__vote__strawberry {
+  position: absolute;
+  top: 317px;
+  left: 50px;
 }
 
 .main__opportunity {
@@ -284,6 +337,18 @@ textarea[type="text"]:hover::-webkit-input-placeholder {
   align-items: flex-end;
 }
 
+img.footer__berry {
+  position: absolute;
+  top: 178px;
+  left: 77px;
+}
+
+img.footer__strawberry {
+  position: absolute;
+  left: 585px;
+  top: 198px;
+}
+
 ul {
   list-style-type: none;
 }
@@ -310,5 +375,8 @@ ul {
   margin-right: 18px;
 }
 
-.footer__our-social__odnoklassniki {
+.apple-footer-body {
+  position: fixed;
+  bottom: 132px;
+  right: 92px;
 }
