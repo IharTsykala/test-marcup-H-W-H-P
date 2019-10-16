@@ -107,6 +107,7 @@ body {
 
 .header__competition-rules a {
   text-decoration: none;
+  height: 18px;
 }
 
 .header__competition-rules a p {
@@ -473,7 +474,7 @@ ul {
   .main__form__participant-data input,
   .main__form__participant-data textarea {
     display: grid;
-    width: 60%;
+    width: 80%;
     margin: 30px auto;
   }
 
@@ -542,5 +543,51 @@ ul {
   }
 }
 
-@media (max-width: 480x) {
+@media (max-width: 480px) {
+  .header img {
+    display: grid;
+    width: 90%;
+  }
+
+  .main__vote__quick-voting {
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+  }
+
+  .main__vote__quick-voting h3 {
+    font-size: 24px;
+    width: 90vw;
+    display: grid;
+  }
+
+  .main__vote__quick-voting p {
+    font-size: 18px;
+    width: 90vw;
+  }
+
+  .main__form__participant-data h4 {
+    font-size: 20px;
+  }
+
+  .main__form__participant-data p {
+    font-size: 16px;
+  }
+
+  .main__form__participant-data input,
+  .main__form__participant-data textarea {
+    width: 100%;
+  }
+
+  .main__form__participant-data button {
+    width: 60%;
+  }
+
+  .footer {
+    height: 150px;
+  }
+
+  .footer__our-contacts ul {
+    font-size: 10px;
+  }
 }
