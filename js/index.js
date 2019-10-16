@@ -7,7 +7,8 @@ const handlerSubmit = e => {
     inputs[i].required = "false";
     inputs[i].style.borderColor = "";
     if (inputs[i].value === "") {
-      inputs[i].placeholder = "Вы забыли ввести свои данные!";
+      inputs[i].placeholder = `${inputs[i].placeholder}:
+      Вы забыли ввести свои данные!`;
       inputs[i].required = "true";
       inputs[i].style.borderColor = "red";
       e.preventDefault();

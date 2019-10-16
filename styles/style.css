@@ -381,3 +381,166 @@ ul {
   bottom: 132px;
   right: 92px;
 }
+
+@media (max-width: 1023px) {
+  .h1,
+  .berry-body,
+  .wrapper-1024__bag-set,
+  .main__vote__strawberry,
+  .footer__berry,
+  .footer__strawberry,
+  .apple-footer-body {
+    display: none;
+  }
+
+  body,
+  .wrapper-1920 {
+    background-image: none;
+    background-color: white;
+    height: 100%;
+  }
+
+  .wrapper-1024 {
+    width: 100%;
+    grid-template-rows: auto;
+  }
+
+  .header,
+  footer {
+    background-color: #b9e5fb;
+  }
+
+  .main {
+    grid-template-rows: auto;
+  }
+
+  .main__vote {
+    display: grid;
+    justify-content: center;
+  }
+
+  .main__vote__quick-voting {
+    padding: 0;
+    width: 400px;
+    text-align: center;
+  }
+
+  .main__vote__quick-voting p {
+    margin: 20px auto 0;
+  }
+
+  .main__opportunity {
+    margin-top: 80px;
+  }
+
+  .main__opportunity figure {
+    display: grid;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .main__form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 360px 1fr;
+    margin-top: 80px;
+    justify-items: center;
+  }
+
+  .main__form figure {
+    margin: 0;
+  }
+
+  .main__form__participant-data {
+    display: grid;
+    justify-items: center;
+    width: 90%;
+  }
+
+  .main__form__participant-data h4 {
+    text-align: center;
+  }
+
+  .main__form__participant-data form {
+    justify-items: center;
+    width: 100%;
+  }
+
+  .main__form__participant-data form fieldset {
+    justify-self: center;
+    width: 100%;
+  }
+
+  .main__form__participant-data input,
+  .main__form__participant-data textarea {
+    display: grid;
+    width: 60%;
+    margin: 30px auto;
+  }
+
+  .main__form__participant-data button {
+    margin-right: 0;
+    justify-self: center;
+  }
+
+  .footer {
+    margin-top: 80px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "social"
+      "contacts";
+    align-items: center;
+  }
+
+  .footer__our-social {
+    grid-area: social;
+    width: 250px;
+    display: grid;
+    justify-self: center;
+    margin-top: 40px;
+  }
+
+  .footer__our-social ul {
+    display: grid;
+    justify-items: center;
+    margin: 0;
+  }
+
+  .footer__our-contacts {
+    grid-area: contacts;
+    width: 100vw;
+    display: grid;
+    justify-self: center;
+    margin: 20px 0;
+  }
+
+  .footer__our-contacts ul {
+    display: grid;
+    justify-items: center;
+    margin: 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    height: auto;
+    justify-items: center;
+  }
+
+  .header__competition-rules {
+    padding: 0;
+    display: grid;
+    align-items: center;
+  }
+
+  .main__opportunity {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480x) {
+}
