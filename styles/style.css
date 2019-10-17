@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "RotondaC-bold";
+  src: url("../assets/fonts/rotondac-bold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RotondaC";
+  src: url("../assets/fonts/rotondac.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +24,7 @@ body {
   min-width: 100vw;
   display: grid;
   justify-items: center;
-  font-family: "RotondaC", sans-serif;
-  font-weight: bold;
+  font-family: "RotondaC-bold", "RotondaC", sans-serif;
   color: #114b8c;
   height: 2200px;
   background-repeat: repeat;
@@ -199,7 +212,7 @@ body {
 }
 
 img.main__vote__strawberry {
-  transition: all 0.6s ease;
+  transition: all 0.6s ease 2s;
   transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
 }
 
