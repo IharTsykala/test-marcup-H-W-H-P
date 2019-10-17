@@ -172,6 +172,13 @@ img.main__vote__strawberry {
 .main__opportunity {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+
+.main__opportunity__validation {
+  height: 1px;
+  width: 1px;
+  display: none;
 }
 
 .main__opportunity__favorite-view {
