@@ -1,8 +1,6 @@
 const form = document.querySelector("form");
 const inputs = form.querySelectorAll("input");
 const button = form.querySelector("button");
-const phone = document.getElementById("phone");
-// console.log(phone);
 
 const widthScreen = () => {
   const w = window;
@@ -18,7 +16,10 @@ const handlerSubmit = e => {
     inputs[i].required = "false";
     inputs[i].style.borderColor = "";
     if (inputs[i].value === "") {
-      if (widthScreen() >= "850") {
+      if (
+        widthScreen() >= "850" &&
+        inputs[i].placeholder.indexOf("Вы забыли ввести свои данные!") === -1
+      ) {
         inputs[i].placeholder = `${inputs[i].placeholder}:
         Вы забыли ввести свои данные!`;
       }
@@ -28,3 +29,7 @@ const handlerSubmit = e => {
     }
   }
 };
+
+button.addEventListener("click", e => {
+  handlerSubmit(e);
+});
