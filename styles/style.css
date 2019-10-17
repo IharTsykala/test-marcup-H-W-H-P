@@ -24,10 +24,39 @@ body {
   position: absolute;
 }
 
-.berry-body {
+.berry-body__donut-animation {
   position: fixed;
   top: 355px;
-  left: 180px;
+  left: 270px;
+}
+
+.berry-body {
+  transition: all 0.6s ease;
+  transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
+}
+
+.berry-body-animation {
+  position: absolute;
+  right: 10%;
+  animation: berry-body 10s linear infinite;
+}
+
+@keyframes berry-body {
+  from {
+    -webkit-transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg) translateX(100px) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes berry-body {
+  from {
+    -webkit-transform: rotate(0deg) translateX(50px) rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg) translateX(50px) rotate(360deg);
+  }
 }
 
 .wrapper-1920 {
@@ -163,10 +192,39 @@ body {
   cursor: pointer;
 }
 
-img.main__vote__strawberry {
+.main__vote__donut-animation {
   position: absolute;
-  top: 317px;
-  left: 50px;
+  left: 190px;
+  top: 330px;
+}
+
+img.main__vote__strawberry {
+  transition: all 0.6s ease;
+  transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
+}
+
+.main__vote__strawberry-animation {
+  position: absolute;
+  right: 10%;
+  animation: main__vote__strawberry 10s linear infinite;
+}
+
+@keyframes main__vote__strawberry {
+  from {
+    -webkit-transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes main__vote__strawberry {
+  from {
+    -webkit-transform: rotate(180deg) translateX(50px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(50px) rotate(-360deg);
+  }
 }
 
 .main__opportunity {
@@ -384,10 +442,45 @@ ul {
   margin-right: 18px;
 }
 
-.apple-footer-body {
+/* .apple-footer-body {
   position: fixed;
   bottom: 132px;
   right: 92px;
+} */
+
+.apple-footer-body__donut-animation {
+  position: fixed;
+  bottom: 300px;
+  right: 150px;
+}
+
+.apple-footer-body {
+  transition: all 0.6s ease;
+  transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
+}
+
+.apple-footer-body-animation {
+  position: absolute;
+  right: 10%;
+  animation: apple-footer-body 30s linear infinite;
+}
+
+@keyframes apple-footer-body {
+  from {
+    -webkit-transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg) translateX(100px) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes apple-footer-body {
+  from {
+    -webkit-transform: rotate(0deg) translateX(50px) rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg) translateX(50px) rotate(360deg);
+  }
 }
 
 @media (max-width: 1023px) {
