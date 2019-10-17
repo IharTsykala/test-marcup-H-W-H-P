@@ -1,6 +1,8 @@
 const form = document.querySelector("form");
 const inputs = form.querySelectorAll("input");
 const button = form.querySelector("button");
+const phone = document.getElementById("phone");
+// console.log(phone);
 
 const widthScreen = () => {
   const w = window;
@@ -26,7 +28,3 @@ const handlerSubmit = e => {
     }
   }
 };
-
-button.addEventListener("click", e => {
-  handlerSubmit(e);
-});

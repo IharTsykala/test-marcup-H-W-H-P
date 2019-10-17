@@ -126,9 +126,11 @@
                     placeholder="Вас зовут"
                   />
                   <input
+                    id="phone"
                     class="main__form__participant-data__input-phone"
                     type="text"
-                    placeholder="Ваш номер телефона"
+                    value="+375"
+                    placeholder="Ваш номер телефона вида: +375 XX XXX-XX-XX"
                   />
                   <input
                     class="main__form__participant-data__input-city"
@@ -192,6 +194,10 @@
       src="assets/img/apple-footer-body.png"
       alt="apple"
     />
-    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async src="js/jquery.maskedinput.min.js"></script>
+
+    <script async src="./js/mashPhone.js"></script>
+    <script async src="js/index.js"></script>
   </body>
 </html>
