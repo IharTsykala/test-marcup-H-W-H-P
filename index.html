@@ -11,17 +11,19 @@
       href="https://fonts.googleapis.com/css?family=Lato"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles\animate.min.css">
     <title>test-markup-JS-H-W-H-P</title>
   </head>
   <body>
-    <h1 class="h1">test-markup-JS-H-W-H-P</h1>    
-    <figure class="berry-body__donut-animation">
+    <h1 class="h1">test-markup-JS-H-W-H-P</h1> 
+    <img class="berry-body" src="assets/img/berry-body.png" alt="berry" />
+    <!-- <figure class="berry-body__donut-animation">
         <img
           class="berry-body berry-body-animation"
           src="assets/img/berry-body.png"
           alt="berry"
         />
-    </figure> 
+    </figure>  -->
     <div class="wrapper-1920">
       <div class="wrapper-1024">
         <figure class="wrapper-1024__bag-set">
@@ -41,7 +43,7 @@
             alt="berry"
           />
           <img
-            class="wrapper-1024__bag-set__bag"
+            class="wrapper-1024__bag-set__bag animated fadeIn"
             src="assets/img/bag-wrapper-1024.png"
             alt="bag"
           />
@@ -55,8 +57,8 @@
           <figure class="header__logo">
             <a href="#">
               <img
-                id="header__logo__img"
-                class="header__logo__img"
+                id="headerLogoImg"
+                class="animated fadeInDown"
                 src="assets/img/Logo.jpg"
                 alt="Logo"
               />
@@ -72,13 +74,14 @@
               <h3 id="upper">Lorem ipsum dolor sit amet, consectetur</h3>
               <p>Что попадет в коллекцию – решать вам!</p>
               <button>голосовать</button>
-            <figure class="main__vote__donut-animation">
+              
+            <!-- <figure class="main__vote__donut-animation"> -->
               <img
                 class="main__vote__strawberry main__vote__strawberry-animation"
                 src="assets/img/strawberry-main-vote.png"
                 alt="strawberry"
               />
-          </figure>             
+          <!-- </figure>              -->
           </section>
           <section class="main__opportunity">
             <h6 class="main__opportunity__validation">validation</h6>
@@ -124,7 +127,7 @@
                 в конкурсе и выиграть призы?
               </h4>
               <p>Заполните еще несколько полей.</p>
-              <form action="#">
+              <form class="animated fadeInRight" action="#">
                 <fieldset>
                   <input
                     class="main__form__participant-data__input-name"
@@ -155,7 +158,7 @@
             </figure>
           </section>
         </main>
-        <footer class="footer">
+        <footer class="footer animated bounceInUp">
           <img
             class="footer__berry"
             src="assets/img/berry-footer.png"
@@ -195,18 +198,18 @@
         </footer>
       </div>
     </div>
-    <!-- <img
+    <img
       class="apple-footer-body"
       src="assets/img/apple-footer-body.png"
       alt="apple"
-    /> -->
-    <figure class="apple-footer-body__donut-animation">
+    />
+    <!-- <figure class="apple-footer-body__donut-animation">
         <img
           class="apple-footer-body apple-footer-body-animation"
           src="assets/img/apple-footer-body.png"
           alt="apple"
         />
-    </figure> 
+    </figure>  -->
     <script src="js/index.js" defer></script>
     <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
