@@ -15,8 +15,10 @@
     <title>test-markup-JS-H-W-H-P</title>
   </head>
   <body>
-    <h1 class="h1">test-markup-JS-H-W-H-P</h1> 
-    <img class="berry-body" src="assets/img/berry-body.png" alt="berry" />
+    <h1 class="h1">test-markup-JS-H-W-H-P</h1>
+    <figure class="container__berry-body">
+        <img class="berry-body" src="assets/img/berry-body.png" alt="berry" />
+    </figure>   
     <!-- <figure class="berry-body__donut-animation">
         <img
           class="berry-body berry-body-animation"
@@ -75,13 +77,13 @@
               <p>Что попадет в коллекцию – решать вам!</p>
               <button>голосовать</button>
               
-            <!-- <figure class="main__vote__donut-animation"> -->
+            <figure class="container__main__vote__strawberry">
               <img
                 class="main__vote__strawberry main__vote__strawberry-animation"
                 src="assets/img/strawberry-main-vote.png"
                 alt="strawberry"
               />
-          <!-- </figure>              -->
+          </figure>             
           </section>
           <section class="main__opportunity">
             <h6 class="main__opportunity__validation">validation</h6>
@@ -198,11 +200,19 @@
         </footer>
       </div>
     </div>
-    <img
+    <figure id="containerAppleFooterBody" class="container__apple-footer-body">
+        <img
+        id="appleFooterBody"
+        class="apple-footer-body"
+        src="assets/img/apple-footer-body.png"
+        alt="apple"
+      />
+    </figure>
+    <!-- <img
       class="apple-footer-body"
       src="assets/img/apple-footer-body.png"
       alt="apple"
-    />
+    /> -->
     <!-- <figure class="apple-footer-body__donut-animation">
         <img
           class="apple-footer-body apple-footer-body-animation"
